@@ -1,0 +1,22 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "react learnings",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arunjenson/react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Arun Jenson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arunjenson/react/issues"
+  },
+  "homepage": "https://github.com/Arunjenson/react#readme"
+}
