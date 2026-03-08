@@ -14,3 +14,9 @@ package-lock.json
 it keeps track of exact version of a package
 
 if we have package.json and package-lock.json we can regenerate the node_modules
+
+
+NPM vs NPX 
+
+npm is used to install any package
+npx is used to execute a package
