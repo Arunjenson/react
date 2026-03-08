@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Arunjenson/react/issues"
   },
-  "homepage": "https://github.com/Arunjenson/react#readme"
+  "homepage": "https://github.com/Arunjenson/react#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
 }
