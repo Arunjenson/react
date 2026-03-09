@@ -30,3 +30,6 @@ npx is used to execute a package
 - Image optimizations
 - Minification and Compression
 - Code Bundling
+- Consistent Hashing
+- Code Splitting
+- Differential Bundling (Support old browsers)
