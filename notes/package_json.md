@@ -22,14 +22,22 @@ npm is used to install any package
 npx is used to execute a package
 
 # Parcel
-- Dev Build
-- Local Server
-- HMR hot module replacement
-- file watching algorithm - written in c++
-- caching - faster builds
-- Image optimizations
-- Minification and Compression
-- Code Bundling
-- Consistent Hashing
-- Code Splitting
-- Differential Bundling (Support old browsers)
+- Parcel features at a glance:
+- Hot Module Replacement (HMR)
+- File Watcher Algorithm - C++
+- Bundling
+- Minify Code
+- Cleaning our code
+- Dev and production build
+- Igniting Our App! ( Namaste-React ) 8
+- Super fast build algorithm
+- Image Optimization
+- Caching while development
+- Compression
+- Compatible with older browser versions
+- Https on dev
+- Image Optimization
+- Port No
+- Consistency Hashing Algorithm
+- Zero Config
+- Tree Shaking
