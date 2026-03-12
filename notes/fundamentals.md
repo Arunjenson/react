@@ -30,3 +30,8 @@ JSX => React.createElement => ReactElement JS object => HTML
 two ways we can write react components
 1. Functional Components. => Just a normal JS function which returns a JSX
 2. Class Based Components
+
+
+## Component Composition
+
+wrapping a react component inside a react component
