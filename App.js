@@ -29,21 +29,48 @@ import ReactDOM from "react-dom/client";
 
 // react function component
 
-const HeadingComponent2 = () => <h1 id="heading">hello world from react 2</h1>;
+// const HeadingComponent2 = () => <h1 id="heading">hello world from react 2</h1>;
 
 // react component compositionx
 
-function HeadingComponent() {
+// function HeadingComponent() {
+//   return (
+//     <div>
+//       <h1 id="heading">hello world from react</h1>
+//       <HeadingComponent2 />
+//     </div>
+//   );
+// }
+
+const Header = () =>{
+  return (
+    <div className="header">
+      <div className="logo-container">
+        <img src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png" className="logo"/>
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Contact us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+      
+    </div>
+  )
+}
+
+
+const AppLayout = () => {
   return (
     <div>
-      <h1 id="heading">hello world from react</h1>
-      <HeadingComponent2 />
+      <Header/>
+      
     </div>
   );
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// root.render(parent)
-// root.render(heading)
-root.render(<HeadingComponent />);
+root.render(<AppLayout />);
