@@ -1,5 +1,5 @@
 
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { FoodItem } from "./RestaurantCard";
 
 const Body = () => {
   return (
@@ -9,6 +9,7 @@ const Body = () => {
       </div>
       <div className="res-container">
         <RestaurantCard />
+        <FoodItem />
         <RestaurantCard />
         <RestaurantCard />
         <RestaurantCard />

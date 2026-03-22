@@ -35,3 +35,16 @@ two ways we can write react components
 ## Component Composition
 
 wrapping a react component inside a react component
+
+# Exports
+
+We can have both named export and default export in a single file   
+
+
+# React Hooks
+(Normal JS utility functions)
+
+useState - Super Powerful state variables
+useEffect
+
+# React Fiber = https://github.com/acdlite/react-fiber-architecture

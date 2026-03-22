@@ -8,4 +8,14 @@ const RestaurantCard = () => {
     </div>
   )
 }
+
+export const FoodItem = () => {
+  return (
+    <div className="food-item">
+      <img alt="foodlogo" src="https://www.cookingcarnival.com/wp-content/uploads/2025/09/Vegetable-Dum-Biryani-5.jpg" className="food-logo"/>
+      <h3>Veg Biryani</h3>
+      <h4>Rs. 200</h4>
+    </div>
+  )
+}
 export default RestaurantCard;
