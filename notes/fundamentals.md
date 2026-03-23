@@ -41,10 +41,37 @@ wrapping a react component inside a react component
 We can have both named export and default export in a single file   
 
 
+# React Fiber = https://github.com/acdlite/react-fiber-architecture
+
 # React Hooks
 (Normal JS utility functions)
 
-useState - Super Powerful state variables
-useEffect
+## useState - Super Powerful state variables
 
-# React Fiber = https://github.com/acdlite/react-fiber-architecture
+syntax -> useState(default value of the state variable) which gives an array here 
+zeroth index will be the current value of the state variable and first index will be the 
+setter function to update this state variable 
+when setter function is called appropriate react reconciliation starts(fiber) and after that react renders the component to show the latest changes
+
+const [value,setValue] = useState(null); 
+
+value is the state variable name 
+setValue is the function we can use to update the state variable
+null is the default value for this state variable
+
+## useEffect 
+
+syntax => useEffect () two arguments, a callback function and a dependency array
+so,
+useEffect(()=>{
+    console.log("useEffect is console logged");
+},[dependency array, items ,here])
+
+
+Working
+
+useEffect of a component will run only after that specific component renders
+
+
+
+

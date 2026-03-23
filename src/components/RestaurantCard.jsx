@@ -1,21 +1,25 @@
-const RestaurantCard = () => {
-  return (
-    <div className="res-card">
-      <img alt="reslogo" src="https://www.cookingcarnival.com/wp-content/uploads/2025/09/Vegetable-Dum-Biryani-5.jpg" className="res-logo"/>
-      <h3>Meghana Foods</h3>
-      <h4>South Indian, North Indian</h4>
-      <h4>4.5 stars</h4>
-    </div>
-  )
-}
+import { IMG_CDN_URL } from "../constants";
+// import { useContext } from "react";
+// import UserContext from "../utils/UserContext";
 
-export const FoodItem = () => {
+const RestrauntCard = ({
+  name,
+  cuisines,
+  cloudinaryImageId,
+  lastMileTravelString,
+}) => {
+  // const { user } = useContext(UserContext);
   return (
-    <div className="food-item">
-      <img alt="foodlogo" src="https://www.cookingcarnival.com/wp-content/uploads/2025/09/Vegetable-Dum-Biryani-5.jpg" className="food-logo"/>
-      <h3>Veg Biryani</h3>
-      <h4>Rs. 200</h4>
+    <div className="">
+      <img src={IMG_CDN_URL + cloudinaryImageId} />
+      <h2 className="font-bold text-xl">{name}</h2>
+      <h3>{cuisines.join(", ")}</h3>
+      <h4>{lastMileTravelString}</h4>
+      {/* <h5 className="font-bold">
+        {user.name} - {user.email}
+      </h5> */}
     </div>
-  )
-}
-export default RestaurantCard;
+  );
+};
+
+export default RestrauntCard;
