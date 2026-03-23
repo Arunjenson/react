@@ -8,6 +8,7 @@ const RestrauntCard = ({
   cloudinaryImageId,
   lastMileTravelString,
 }) => {
+  console.log(name);
   // const { user } = useContext(UserContext);
   return (
     <div className="">

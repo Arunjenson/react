@@ -1,4 +1,3 @@
-import { restaurantList } from "../constants";
 import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
@@ -12,13 +11,10 @@ const Body = () => {
 
   async function getRestaurants() {
     const data = await fetch(
-      "https://namastedev.com/api/v1/listRestaurants"
+      "https://corsproxy.io?https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
-    setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-    setAllRestaurants(restaurantList);
-   
-    // setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+    setAllRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   }
   if (!allRestaurants) return null;
 
@@ -31,7 +27,7 @@ const Body = () => {
       <div className="" data-testid="">
         {allRestaurants.map((restaurant) => {
           return (
-              <RestaurantCard {...restaurant.data} />
+            <RestaurantCard {...restaurant.info} key={restaurant.info.id}/>
           );
         })}
       </div>
